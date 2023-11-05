@@ -1,0 +1,14 @@
+.dog-photos-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vw;
+}
+
+.dog-image {
+  width: 50vw;
+}

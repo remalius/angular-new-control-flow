@@ -1,0 +1,7 @@
+<div class="dog-photos-list">
+  @for (item of dogPhotos; track item) {
+    <div class="dog-image-container">
+      <img class="dog-image" [src]="item" />
+    </div>
+  }
+</div>

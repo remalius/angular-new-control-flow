@@ -1,0 +1,15 @@
+<div class="top">
+  <h1>Cocker Spaniel Photos</h1>
+  <button type="button" #loadButton>Click to load photos</button>
+  <div class="info">
+    @defer (on interaction(loadButton)) {
+      <dog-photos-list [dogPhotos]="dogPhotos()"></dog-photos-list>
+    } @placeholder {
+      <span>No photos loaded</span>
+    } @loading(minimum 1s) {
+      <span>Loading photos...</span>
+    } @error {
+      <span>Error</span>
+    }
+  </div>
+</div>
